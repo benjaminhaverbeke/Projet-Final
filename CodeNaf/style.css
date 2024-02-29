@@ -1,0 +1,18 @@
+@import url('../reset.css');
+main{
+    overflow: scroll;
+    width: 50vw;
+    margin: auto;
+    border: 1px solid #000;
+}
+main div{
+    text-align: center;
+    width: 100%;
+}
+main p{
+    width: 100%;
+}
+
+main img{
+    width: 100%;
+}
