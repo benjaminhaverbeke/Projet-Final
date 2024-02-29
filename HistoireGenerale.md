@@ -1,11 +1,5 @@
-Nom du groupe : RED CAT THAY
 
-Description page principale: POUN 
-
-
-L'histoire de Poun, le chat boxeur et pizzaiolo :
-
-
+L'histoire de Poun, le chat boxeur et pizzaiolo
 Dans un petit village de Thaïlande, niché au bord d'une rivière paisible, vivait un chat pas comme les autres. Son nom était Poun, et il avait deux passions : la boxe et la pizza.
 
 Le village, un havre de paix aux maisons de bois et de bambou, était entouré de rizières verdoyantes et de champs de légumes. Les habitants, des gens simples et travailleurs, vivaient en harmonie avec la nature. C'était dans ce cadre idyllique que Poun grandissait, un chat heureux et chanceux.
