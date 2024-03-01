@@ -7,10 +7,10 @@ document.addEventListener('DOMContentLoaded', function(){
 popUp.classList.add('open');
   });
 
-  document.addEventListener('click', function(event){
+  popUp.addEventListener('mouseout', function(event){
     let click = event.target;
     if (click !== popUp && click !== openForm){
-      popUp.classList.remove('.open');
+      popUp.classList.remove('open');
     }
   });
 });
