@@ -141,6 +141,7 @@ main{
     margin: auto;
     font-size: 1.5em;
     overflow: hidden;
+    margin-top: 50px;
 }
 main div{
     border: 2px solid #F3D34A;
@@ -161,4 +162,19 @@ main img{
 }
 .description-text{
     padding: 20px 10px;
+}
+
+.arrow{
+    width: 80px;
+    position: fixed;
+    right: 100px;
+    cursor: pointer;
+}
+.arrow-top{
+    top: 500px;
+    transform: rotate(-90deg);
+}
+.arrow-bottom{
+    top: 650px;
+    transform: rotate(90deg);
 }

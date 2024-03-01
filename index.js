@@ -11,4 +11,19 @@ document.addEventListener('DOMContentLoaded', function() {
     burgerClose.addEventListener('click', function() {
       navigation.classList.remove('active')
     })
+
+//*****************************************   Main  *****************************************
+/*const arrowTop = document.querySelector('.arrow-top');
+const arrowBottom = document.querySelector('.arrow-bottom');
+const articles = document.querySelectorAll('.article');
+let position = 1400;
+
+arrowBottom.addEventListener('click', function(){
+  window.scroll(0, position, 'smooth');
+  position += 1500;
+  
+})
+arrowTop.addEventListener('click', function(){
+  window.scroll(0, -200);
+})*/
 });
