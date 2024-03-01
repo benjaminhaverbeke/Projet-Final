@@ -26,4 +26,17 @@ arrowBottom.addEventListener('click', function(){
 arrowTop.addEventListener('click', function(){
   window.scroll(0, -200);
 })*/
-});
+
+/********************footer***************/
+let button = document.querySelector('.button');
+    
+    console.log(button);
+    button.addEventListener("click", function(){
+        console.log(event);
+     
+           window.scroll(0, 0);
+     
+        
+    })
+    
+});  
