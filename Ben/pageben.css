@@ -1,7 +1,10 @@
 @import url('reset.css');
+html{
+  margin-bottom:0;
+}
 
 header {
-  background: green;
+  background: #00a7e1;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -13,7 +16,7 @@ header {
   height: 80px;
 }
 
-.header__logo__box > a {
+.header__logo__box>a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,56 +31,56 @@ header {
 }
 
 .brown__name {
-  color:rgb(165, 100, 54);
+  color: rgb(165, 100, 54);
 }
 
 .header__burger {
   width: 50px;
   height: 25px;
-	position: relative;
-	cursor: pointer;
+  position: relative;
+  cursor: pointer;
 }
 
 .header__burger::before {
   content: '';
-			position: absolute;
-			top: 0;
-			left: 0;
-			right: 0;
-			height: 3px;
-			background: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: black;
 }
 
 .header__burger::after {
   content: '';
   position: absolute;
   top: auto;
-	bottom: 0;
+  bottom: 0;
   left: 0;
-	right: 0;
+  right: 0;
   height: 3px;
-	background: black;
+  background: black;
 }
 
 .header__burger span {
   content: '';
-	position: absolute;
-	left: 0;
-	right: 0;
-	height: 3px;
-	background: black;
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: black;
   top: 50%;
-	transform: translateY(-50%);
-} 
+  transform: translateY(-50%);
+}
 
 .header__nav {
   position: fixed;
-	z-index: 101;
-	top: -200%;
-	right: 15px;
-	background: yellowgreen;
-	padding: 12px;
-	transition: top .3s linear;
+  z-index: 101;
+  top: -200%;
+  right: 15px;
+  background: blue;
+  padding: 12px;
+  transition: top .3s linear;
   border-radius: 8px;
 }
 
@@ -87,36 +90,36 @@ header {
 
 .header__nav__close {
   width: 26px;
-	height: 26px;
-	position: relative;
-	margin: 0 0 20px auto;
-	cursor: pointer;
+  height: 26px;
+  position: relative;
+  margin: 0 0 20px auto;
+  cursor: pointer;
 }
 
 .header__nav__close::before {
   content: '';
-	position: absolute;
-	top: 50%;
-	left: 0;
-	right: 0;
-	height: 2px;
-	background: red;
-	transform: rotate(45deg);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: red;
+  transform: rotate(45deg);
 }
 
 .header__nav__close::after {
   content: '';
-	position: absolute;
-	top: 50%;
-	left: 0;
-	right: 0;
-	height: 2px;
-	background: red;
-	transform: rotate(-45deg);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: red;
+  transform: rotate(-45deg);
 }
 
 
-.header__list > li > a {
+.header__list>li>a {
   text-decoration: none;
   color: black;
   font-size: 20px;
@@ -124,7 +127,7 @@ header {
   font-family: sans-serif;
 }
 
-.header__list > li {
+.header__list>li {
   padding: 20px 40px;
   text-align: center;
   border: 2px solid yellow;
@@ -134,123 +137,229 @@ header {
 
 
 /****************************   MAIN    ***************************************/
+
 body {
   background-color: #73c1c6;
-  width:100%;
-  height:100%;
-  margin:0;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0;
+ 
 }
 
 
+h1 {
+  text-align: center;
+  font-size: 3em;
+  font-family: "Madimi One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding: 1em;
+  color: white;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .histoire {
+
+  
   border-radius: 10px;
-background: turquoise;
-box-shadow: inset 5px 5px 7px #a1a1a1,
-            inset -5px -5px 7px #ffffff;
-margin: 5em;
+  background: turquoise;
+  box-shadow: inset 5px 5px 7px #a1a1a1,
+  inset -5px -5px 7px #ffffff;
+  margin: 5em;
+  padding: 3em;
+  color:white;
+  
+  
+  
+  height: 50em;
+  width: 70%;
+  
+
+  
 }
+article {
+  opacity: 0;
+  position: absolute;
+  z-index: 0;
+  width:60%;
+  
+  
+  
+  
+  
+  
+ 
+}
+/*#deux {*/
+/*  bottom: 40em;*/
+/*  display:inline;*/
+/*}*/
+/*#trois {*/
+/*  bottom: 80em;*/
+/*}*/
+/*#quatre {*/
+/*  bottom: 120em;*/
+/*}*/
+/*#cinq {*/
+/*  bottom: 120em;*/
+/*}*/
+/*#six{*/
+/*  bottom : 150em;*/
+/*}*/
+article div {
+  margin:1em;
+  height:20em;
+}
+img {
+  height : 20em;
+  position:relative;
+  bottom: 2em;
+}
+#un:first-child div {
+  width: 50%;
+  padding: 2em;
+  justify:content;
+  vertical-align:middle;
+  top: 3em;
+  text-align:justify;
+}
+
+
+/****************SLIDER*******************************/
+input[type="range"] {
+            font-size: 1.5rem;
+            width: 12.5em;
+            cursor: pointer;
+            
+        }
+.slider {
+  margin: 2em;
+  
+  position:absolute;
+  bottom: 18em;
+  
+  
+  
+}
+
+
 
 /*****************MER**********************************/
 
-
 .mer {
-  position:relative;
+  position: absolute;
   background-color: #00a7e1;
-  width:100%;
-  height:100%;
-  bottom:0;
-  height:7em;
-  border-radius: none;
-   
-  margin:0;
-  overflow:hidden;
+  width: 100%;
+  height: 100%;
+ 
+  
+  overflow: hidden;
 }
 
 .wave {
-  
-  
-  position:absolute;
-  
-  
-  background-image : url(https://svgsilh.com/svg/308726.svg);
- overflow:hidden;
- background-position:center;
- background-repeat : no-repeat;
- background-size: 100%;
- height:3em;
- width:3em;
-opacity:0;
+
+
+  position: absolute;
+
+
+  background-image: url("./assets/img/vague.png");
+  overflow: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 3em;
+  width: 3em;
+  opacity: 0;
   animation-duration: 25s;
   animation-name: wave;
 }
 
 @keyframes wave {
-  75% {opacity: 1;
-  
+  50% {
+    opacity: 0;
+
   }
 }
 
 /*****************FOOTER***********************************/
 
-
-
 footer {
-    background-color: green;
-    
-    bottom:-50;
-    
-    width: 100%;
-    
 
-}
-footer > ul > li {
-    display:inline-block;
-    vertical-align:middle;
-    font-family: arial;
-    font-size: 0.8em;
-    
 
-}
  
+position: absolute;
+    bottom:-50;
+    width: 100%;
+
+
+}
+
+footer>ul>li {
+  display: inline-block;
+  vertical-align: middle;
+  
+  justify-content: space-between;
+  font-family: arial;
+  font-size: 0.8em;
+  color: white;
+  padding: 2em;
+
+}
+
 ul {
-    width:100%;
-    height:100%;
-    
-}
-.logofooter{
-    height: 5em;
-    position:relative;
-    
-    
+  width: 100%;
+  height: 100%;
+
 }
 
-.authors{
-    position:relative;
-    
-    left: 3em;
-    
+.logofooter {
+  height: 5em;
+  position: relative;
+
+
 }
-.plan{
-    position:relative;
-    
-    left: 8em;
-    
+
+.authors {
+  position: relative;
+
+  left: 3em;
+
 }
+
+.plan {
+  position: relative;
+
+  left: 8em;
+
+}
+
 .authors span {
-    color:white;
-    font-weight: bold;
+  color: white;
+  font-weight: bold;
 }
 
-.button {
-	border:none;
-	background-color: red;
-	padding: 1em;
-	position:relative;
-	left:23em;
-	font-weight:bold;
-	color: white;
-	border-radius: 10px;
-  font-family:verdana;
-	
-	
-}
+/*.button {*/
+
+/*	border:none;*/
+
+/*	background-color: red;*/
+
+/*	padding: 1em;*/
+
+/*	position:relative;*/
+
+/*	float:right;*/
+
+/*	font-weight:bold;*/
+
+/*	color: white;*/
+
+/*	border-radius: 10px;*/
+
+/*  font-family:verdana;*/
+
+/*}*/
