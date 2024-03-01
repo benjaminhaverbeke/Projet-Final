@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
+<<<<<<< HEAD
   
     const burgerOpen = document.querySelector('.header__burger')
     const burgerClose = document.querySelector('.header__nav__close')
@@ -26,4 +27,32 @@ arrowBottom.addEventListener('click', function(){
 arrowTop.addEventListener('click', function(){
   window.scroll(0, -200);
 })*/
+=======
+
+  const burgerOpen = document.querySelector('.header__burger')
+  const burgerClose = document.querySelector('.header__nav__close')
+  const navigation = document.querySelector('.header__nav')
+
+  burgerOpen.addEventListener('click', function() {
+    navigation.classList.add('active')
+  })
+
+  burgerClose.addEventListener('click', function() {
+    navigation.classList.remove('active')
+  })
+
+  let button = document.querySelector('.button');
+
+  console.log(button);
+  button.addEventListener("click", function() {
+    console.log(event);
+
+    window.scroll(0, 0);
+
+
+  });
+
+
+
+>>>>>>> 51042fa85cf5657473b8f6dae0d29c79c2e85a90
 });

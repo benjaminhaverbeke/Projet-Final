@@ -178,3 +178,69 @@ main img{
     top: 650px;
     transform: rotate(90deg);
 }
+
+
+/*****************FOOTER***********************************/
+
+
+
+footer {
+    background-color: green;
+    position: absolute;
+    bottom:-50;
+    
+    width: 100%;
+    
+
+}
+footer > ul > li {
+    display:inline-block;
+    vertical-align:middle;
+    font-family: arial;
+    font-size: 0.8em;
+    
+
+}
+ 
+ul {
+    width:100%;
+    height:100%;
+    
+}
+.logofooter{
+    height: 5em;
+    position:relative;
+    
+    
+}
+
+.authors{
+    position:relative;
+    
+    left: 3em;
+    
+}
+.plan{
+    position:relative;
+    
+    left: 8em;
+    
+}
+.authors span {
+    color:white;
+    font-weight: bold;
+}
+
+.button {
+	border:none;
+	background-color: red;
+	padding: 1em;
+	position:relative;
+	left:23em;
+	font-weight:bold;
+	color: white;
+	border-radius: 10px;
+    font-family:verdana;
+	
+	
+}
